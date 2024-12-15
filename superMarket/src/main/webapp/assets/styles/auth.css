@@ -1,0 +1,95 @@
+@charset "UTF-8";
+ body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: url('../images/3.jpeg') no-repeat center center fixed;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.conteneur {
+    background: rgba(255, 255, 255, 0.1); /* Transparence */
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 400px;
+    animation: apparition 1s ease-out;
+}
+
+@keyframes apparition {
+    from {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.titre {
+    text-align: center;
+    margin-bottom: 1.5rem;
+    font-size: 1.8rem;
+    color: #4caf50;
+}
+
+.champ {
+    margin-bottom: 1rem;
+}
+
+.champ label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+.champ input, .champ select {
+    width: 100%;
+    padding: 0.8rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: box-shadow 0.3s;
+}
+
+.champ input:focus, .champ select:focus {
+    outline: none;
+    box-shadow: 0 0 5px #4caf50;
+}
+
+.bouton {
+    background: #4caf50;
+    color: #ffffff;
+    border: none;
+    padding: 0.8rem;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    width: 100%;
+    transition: background 0.3s;
+}
+
+.bouton:hover {
+    background: #388e3c;
+}
+
+.animation {
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.animation a {
+    color: #4caf50;
+    text-decoration: none;
+    font-size: 0.9rem;
+}
+
+.animation a:hover {
+    text-decoration: underline;
+}

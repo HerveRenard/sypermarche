@@ -1,0 +1,145 @@
+@charset "UTF-8";
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+}
+
+header {
+    background-color: #ff6600;
+    padding: 10px 20px;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+}
+
+.search-bar input {
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+    width: 300px;
+}
+
+.product-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    transition: transform 0.3s ease;
+}
+
+.product {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 15px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.product img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.product h3 {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.product p {
+    margin: 5px 0;
+    color: #555;
+}
+
+.product button {
+    background-color: #ff6600;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.product button:hover {
+    background-color: #e05500;
+}
+
+/* Style de base de la navbar */
+nav {
+    background-color: #333;
+    padding: 10px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.1); 
+}
+
+/* Style des liens de la navbar */
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    margin: 0 10px;
+    font-size: 16px;
+    text-align: center;
+    display: block;
+}
+
+/* Effet au survol */
+nav a:hover {
+    background-color: #ddd;
+    color: #333;
+    border-radius: 5px;
+}
+
+/* Optionnel : style actif pour le lien sélectionné */
+nav a.active {
+    background-color: #28a745;
+    color: white;
+    border-radius: 5px;
+}
+
+img:hover {
+    transform: scale(1.1); /* Agrandir l'image de 10% */
+}
+
+/* Style des liens dans le footer */
+footer a {
+    color: #fff;
+    text-decoration: none;
+    padding: 5px 10px;
+}
+
+/* Effet au survol des liens */
+footer a:hover {
+    text-decoration: none;
+}
+
+/* Style pour les sections du footer */
+.footer-content {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    background-color:gray;
+    border-radius:2px;
+}
+
+/* Style pour les colonnes du footer */
+.footer-column {
+    margin: 0 10px;
+}
